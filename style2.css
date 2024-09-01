@@ -1,0 +1,228 @@
+ /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    max-width: 100vh;
+}
+.cover1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    padding: 20px 40px 20px;
+    background: #e74998;
+}
+.cover1 img{
+    width: 398px;
+    height: 285px;
+    border: 20px;
+    border-radius: 5%;
+}
+.button1{
+    top: 20px;
+    font-size: 25px;
+    border: #1149e4;
+    border-radius: 15px;
+    width: 100px;
+    background: #0ad128;
+    color: #eeeef2;
+}
+.box1, .box2, .box3 {
+    min-width: 200px;
+    background: blue;
+    flex: 1; 
+    border-radius: 5%;
+}
+.cover1 p{
+    color: rgb(249, 45, 13);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background-color: #eeeef2;
+    width: 150px;
+    margin-left: 130px;
+    border-radius: 15px;
+}
+.cover1 span{
+    color: white;
+    font-size: 15px;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .conver1 img>div {
+        flex: 100%;
+        
+    }
+
+    .box1, .box2, .box3{
+        min-height: 170px !important;
+    }
+    
+}  */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #ddd;
+    height: 100%;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    background-color: rgb(240, 175, 240)
+
+}
+
+.box a img {
+    background-color: aqua;
+    width: 190px;
+    height: 190px;
+    justify-content: center;
+    box-shadow: rgb(23, 213, 6);
+    clip-path: circle(50.0% at 50% 50%);
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (max-width: 1024) {
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 550px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    
+}  
+span{
+    color: rgb(9, 9, 9);
+    font-size: 15px;
+    
+    
+    /* background: rgb(201, 164, 115); */
+    
+}
+.button {
+    width: 95px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 45px;
+    color: aliceblue;
+    background-color: rgb(162, 255, 0);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 15px;
+}
+.button b{
+    font-size: 15px;
+    color: white;
+}
+.button b:hover{
+    /* background: black; */
+    color: rgb(241, 5, 127);
+    transition: .3s;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+} */
+
+.rating {
+    display: flex;
+    justify-content: left;
+    height: 35pxpx;
+    /* background-color: #f4f4f4;  */
+    margin: 0px;
+    direction: rtl; /* This makes the stars appear in the correct order */
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-left: 9px;
+
+    
+}
+
+.rating input:checked ~ label {
+    color: #f39c12;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f1c40f;
+}
+
+/* Reset default styling */
+/* body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+} */
+
+/* Hide radio buttons */
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+}
+.box {
+    flex: 1 0 200px;
+    height: 200px;
+    background-color: red;
+}
+
+@media screen and (wax-width: 768px) {
+    .container {
+        columns: 1fr 1fr;
+    }   
+}
+@media screen and (max-width: 1024px){
+    .container{
+        columns: 1fr 1fr 1fr;
+    }
+    
+} */

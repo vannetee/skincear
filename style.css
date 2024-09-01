@@ -1,0 +1,272 @@
+/* *{
+    padding: 0  ;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.body1{
+    background: #5e58d1;
+}
+.logo {
+    font-size: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 35px;
+
+}
+ul {
+    list-style: none;
+    background: rgb(27, 27, 28);
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 25px 37px;
+    color: aliceblue;
+    text-decoration: none;  
+    text-align: center;           
+    font-size: 15px;
+    right: 15px;
+
+
+}
+ul li ul.dropdown li a {
+    display: block;
+    text-align: center;
+}
+ul li ul.dropdown {
+    width: 100%;
+
+    background: rgb(15, 15, 15);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: rgb(21, 159, 177);
+    display: block;
+}
+ul li:hover  ul.dropdown {
+    display: block;
+}
+.dropdown li a {
+    font-size: 15px;
+    color: rgb(246, 239, 239);
+    text-align: center;
+    position: relative;
+    width: 57%;
+
+}
+.dropdown li a:hover{
+    background: green;
+    width: 50%;
+    height: 15px;
+    border-radius: 15px
+}
+
+.cover1{
+    width: 18px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 500px;
+    text-align: center;
+    padding: 20px 40px 20px;
+}
+.cover1 img{
+    width: 398px;
+    height: 285px;
+    border: 20px;
+}
+.cover1 p{
+    color: rgb(249, 45, 13);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background-color: #eeeef2;
+    border-radius: 15px;
+}
+.cover1 p:hover{
+    color: #030214;
+    transition: .5s;
+}
+.box1{
+    box-shadow: 0 8px 11px rgba(4, 208, 205, 0.15);
+}
+ */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;  
+
+}
+body{
+    min-height: 100vh;
+    background: rgb(196, 26, 122);
+    background-size: cover;
+    background-position: center;
+    background: url(bakground1.webp) no-repeat;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    
+    
+
+}
+ header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: black;
+}
+header .navbar ul {
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    display: block;
+
+}
+header .navbar ul li a:hover{
+    background-color: rgb(224, 36, 146);
+    color: rgb(2, 247, 132);
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: rgb(211, 14, 172);
+    display: none; 
+}
+ header .navbar ul li ul li{
+    width: 100%;
+    border-top: 2px solid rgba(0,0,0,.1); 
+}  
+ header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+
+} 
+#menu-bar{
+    display: none;
+} 
+header label{
+    font-size: 20px;
+    color: rgb(203, 206, 20);
+    cursor: pointer; 
+    display: none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 991px){
+    header{
+        padding: 20px;
+
+    }
+    header label{
+        display: initial;
+        
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: white;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none; 
+    } 
+    header .navbar ul li{
+        width: 100%;
+    }
+    
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    } 
+     header .navbar ul li ul li{
+        background: white;
+    }
+    header .navbar ul li ul li li{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+     
+
+}
+
+
+.cover1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 500px;
+    text-align: center;
+    padding: 20px 40px 20px;
+}
+.cover1 img{
+    width: 398px;
+    height: 285px;
+    border: 20px;
+}
+.cover1 p{
+    color: rgb(249, 45, 13);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background-color: #eeeef2;
+    border-radius: 15px;
+}
+.cover1 p:hover{
+    color: #030214;
+    transition: .5s;
+}
+.box1{
+    box-shadow: 0 8px 11px rgba(4, 208, 205, 0.15);
+}
+
+.box2{
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+}
+.box3{
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+}
+.box4{
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+}

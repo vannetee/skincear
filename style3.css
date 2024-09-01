@@ -1,0 +1,23 @@
+.des {
+    width: 85px;
+    height: 46px;
+    background-color: red;
+    clip-path: polygon(100% 0%, 64% 47%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    position: relative;
+    right: 15px;
+    top: 17px;
+   
+}
+.des span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-weight: 600;
+}
+.card {
+    margin-top: 6%;
+}
